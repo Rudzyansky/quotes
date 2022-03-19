@@ -1,0 +1,19 @@
+<?php
+
+namespace Config;
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+class EMail
+{
+    const SMTP_SECURE = PHPMailer::ENCRYPTION_SMTPS; // Yandex uses this method
+
+    const HOST = "smtp.yandex.ru";
+    const PORT = 465;
+    const USERNAME = "noreply@example.com";
+    const PASSWORD = "P@ssw0rd";
+
+    // From field. For example: "Quotes <noreply@example.com>"
+    const FROM_NAME = "Quotes";
+    const FROM_ADDRESS = "noreply@example.com";
+}

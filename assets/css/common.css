@@ -1,0 +1,228 @@
+body {
+    color: #222222;
+    background-color: #f9f9f9;
+    font-family: mono, monospace;
+    user-select: none;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 8px 0;
+    background: #f9f9f9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.header > div {
+    flex: 1;
+}
+
+.header > .left {
+    /*flex: 1;*/
+    margin-left: 15%;
+}
+
+.header > .right {
+    /*flex: 1;*/
+    margin-right: 15%;
+    text-align: right;
+}
+
+#left, #right {
+    position: fixed;
+    z-index: 0;
+    top: 37px;
+    bottom: 0;
+    width: 10%;
+}
+
+#info {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top, #bottom {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    background: rgba(200, 200, 200, 0.2);
+}
+
+#top {
+    justify-content: start;
+}
+
+#bottom {
+    justify-content: end;
+}
+
+#top > * {
+    margin-top: 21px;
+}
+
+#bottom > * {
+    margin-bottom: 21px;
+}
+
+.container {
+    padding-top: 37px;
+    margin: 0 15%;
+}
+
+#search {
+    width: 30%;
+    height: 19px;
+    padding: 0 5px;
+    border: 0;
+    border-bottom: 1px solid #666666;
+    background: unset;
+    text-align: center;
+}
+
+#search::placeholder {
+    font-family: mono, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        margin: 0;
+        width: -moz-available;
+        padding: 8px;
+    }
+
+    .header > .left {
+        margin-left: 0;
+    }
+
+    .header > .right {
+        margin-right: 0;
+    }
+
+    #left, #right {
+        display: none;
+    }
+
+    .loadedLabel {
+        display: none;
+    }
+
+    .container {
+        margin: 0 8px 8px 8px;
+    }
+}
+
+.quote {
+    margin: 10px 0;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    border-radius: 5px;
+}
+
+#reload {
+    margin: 0;
+}
+
+.quote > * {
+    margin: 10px;
+}
+
+.text {
+    /*white-space: pre-wrap;*/
+    word-wrap: break-word;
+    user-select: text;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover, a:visited:hover {
+    color: #666666;
+}
+
+a, a:visited {
+    color: #222222;
+}
+
+.edit, .edit:visited, .apply, .apply:visited {
+    color: #51a0d5;
+}
+
+.edit:hover, .edit:visited:hover, .apply:hover, .apply:visited:hover {
+    color: #60c4ff;
+}
+
+.remove, .remove:visited, .cancel, .cancel:visited {
+    color: #d551a0;
+}
+
+.remove:hover, .remove:visited:hover, .cancel:hover, .cancel:visited:hover {
+    color: #ff74b7;
+}
+
+.controls > * {
+    margin-left: 8px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.timestamp {
+    text-align: right;
+    margin-left: 8px;
+}
+
+div {
+    outline: 0;
+}

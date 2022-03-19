@@ -1,0 +1,7 @@
+.idea
+config/Database.php
+config/EMail.php
+templates/email/confirmation.html
+templates/email/recover.html
+*.sql
+*.zip

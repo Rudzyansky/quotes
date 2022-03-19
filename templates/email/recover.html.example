@@ -1,0 +1,4 @@
+<p>Hi, %name%!</p>
+<p>Request for recover your account was received.</p>
+<p>To recover your account follow the <a href="https://example.com%root%/profile/recover/%random%">link</a>.</p>
+<p>https://example.com%root%/profile/recover/%random%</p>

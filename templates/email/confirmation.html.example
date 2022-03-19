@@ -1,0 +1,4 @@
+<p>Hi, %name%!</p>
+<p>You are registered at our project.</p>
+<p>To confirm your e-mail follow the <a href="https://example.com%root%/profile/confirm/%random%">link</a>.</p>
+<p>https://example.com%root%/profile/confirm/%random%</p>

@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.css$ - [L]
+
+RewriteCond %{ENV:REDIRECT_FINISH} !^$
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.php [E=FINISH:1]
